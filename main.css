@@ -1,0 +1,51 @@
+button {
+    
+    grid-gap: 8px;
+    align-items: center;
+    border: 1px solid #000;
+    border-radius: 4px;
+    cursor: pointer;
+    display: inline-flex;
+    font-size: 16px;
+    gap: 8px;
+    justify-content: center;
+    line-height: 1.5;
+    overflow: hidden;
+    padding: 12px 16px;
+    text-decoration: none;
+    text-overflow: ellipsis;
+    transition: all .14s ease-out;
+    white-space: nowrap;
+  }
+  
+  button:hover {
+    box-shadow: 4px 4px 0 #34cb46;
+    transform: translate(-4px, -4px);
+  }
+  
+  button:focus-visible {
+    outline-offset: 1px;
+  }
+/* The following code is the css for menu options */
+  .vertical{
+    width: 200px;
+    margin: 10px;
+    height:150px;
+    overflow-y: auto; /* scrollable list!*/
+  }
+  .vertical a{   /* this means css for anchor tag within vertical div name only!  */
+      background-color: azure;
+      color: #000;
+      display: block;
+      padding: 10px;
+      text-decoration: none; /*remove underline*/
+
+  }
+  
+  .vertical a:hover{
+    background-color: bisque;
+  }
+  .vertical a.active{   /*access div within div*/
+    background-color: #34cb46;
+    color: aliceblue;
+  }

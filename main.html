@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" http-equiv="X-UA-Compatible" name="viewport" content="width=device-width,initial-scale=1.0">
+        <meta name="title" content="Algorithm Visualizer">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+        <link rel="icon" type="image/x-icon" href="download.ico"> 
+        <link rel="stylesheet" href="main.css" />
+        <style>
+            body {
+                font-family: 'Roboto';
+                background-color: rgb(239, 243, 246);
+                transition: background-color 0.3s, color 0.3s;
+            }
+            h3 {
+                text-align: center;
+            }
+            /* Dark mode styles */
+            body.darker {
+                background-color: #333;
+                color: #fff;
+            }
+        </style>
+    </head>
+    <body>
+        <h3>Algorithm Visualizer</h3> 
+     <div id="mode-dark"  style="display: flex;align-items: center;">
+       <button id="mode" onclick="toggleDarkMode()" style="border-radius: 14px; box-shadow: 2px; lighting-color: aquamarine; font-family: Roboto; font-weight: bolder; width: 144px; height:70px;">Toggle Dark Mode</button>
+       <img id="sun" src="https://uxwing.com/wp-content/themes/uxwing/download/weather/sun-color-icon.png"  style="display: flex;justify-content: right;width: 30px; height:30px ;margin-left:10px;">
+     </div> 
+
+     <br>
+     <div id="panel" style="display: flex; align-items: center; margin-left: 100px;">  <!-- Align items horizontally in a div-->
+        <h3> Algorithms List :</h3>
+        <div class="vertical">
+             <a class="active">Search algorithms</a>
+             <a href="search_algo\binary search\index.html">Binary Search</a>
+             <a href="search_algo\linear\linear.html">Linear Search</a>
+
+            </div>
+            <div class="vertical">
+                <a class="active">Sorting algorithms</a>
+                <a href="sort\selection\select.html">Selection sort</a>
+                <a href="search_algo/linear/linear.html">Insertion sort</a>
+   
+               </div>
+
+     </div>
+     <div id="Panel" style="display: flex;justify-content: center;">
+        
+
+     </div>   
+     </div>
+     <script>
+        function toggleDarkMode(){   // used to toggle between dark and light mode            
+            var body=document.body;
+            body.classList.toggle('darker');
+            var item=document.getElementById("mode");
+            if(item.style.color=="black"){     
+               item.style.color="white";
+               item.style.backgroundColor="black";}
+            else{
+               item.style.color="black";
+               item.style.backgroundColor="white";
+            }
+          
+            var sunImage = document.getElementById("sun");
+        var currentSrc = sunImage.src;
+        if (currentSrc.includes("sun-color-icon.png")) {
+            sunImage.src = "moon-icon-23655.png";
+        } else {
+            sunImage.src = "https://uxwing.com/wp-content/themes/uxwing/download/weather/sun-color-icon.png";
+        }
+
+            
+        }
+     </script>
+    </body>
+
+</html>
