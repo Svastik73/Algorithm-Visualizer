@@ -1,0 +1,78 @@
+#heading{
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+#form{
+    text-align: center;
+}
+#btn{
+    border-radius: 5px;
+    border-width: 1px;
+    height: 40px;
+    margin-top:9px ;
+    width: 90px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+#btn:hover{
+    box-shadow: 4px 4px 0 #34cb46;
+    transform: translate(4px, 4px);
+}
+
+/* The code below is for algo visualization*/
+/* 
+#array{
+    height: 320px;
+    width: 600px;
+    align-self: center;
+    margin:auto;
+    position:relative; background-color: azure;
+}
+.block{
+      width:30px;
+      background-color: darkkhaki;
+      bottom:0px;
+      position: absolute;
+      transform: perspective(100px) rotateX(20deg); 
+      transition: 0.2s all ease;
+      border-radius: 7px;
+}
+.block_id {
+    position: absolute;
+    color: black;
+    margin-top: -20px;
+    width: 100%;
+    text-align: center;
+    }
+    */
+    .header {
+        font-size: 35px;
+        text-align: center;
+        }    
+        #array {
+        background-color: white;
+        height: 305px;
+        width: 598px;
+        margin: auto;
+        position: relative;
+        margin-top: 64px;
+        }
+        
+        .block {
+        width: 28px;
+        background-color: #705b95;
+        position: absolute;
+        border-radius: 5px;
+        bottom: 0px;
+        transform: perspective(100px) rotateX(20deg); 
+        transition: 0.2s all ease;
+        }
+        
+        .block_id {
+        position: absolute;
+        color: black;
+        margin-top: -20px;
+        width: 100%;
+        text-align: center;
+        }
+        

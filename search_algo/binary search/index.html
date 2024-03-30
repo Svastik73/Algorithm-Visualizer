@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" http-equiv="X-UA-Compatible" name="viewport" content="width=device-width,initial-scale=1.0">
+        <meta name="title" content="Searching Algorithm Visualizer">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+        <link rel="icon" type="image/x-icon" href="download.ico"> 
+        <link rel="stylesheet" href="algo.css" />
+        <link rel="stylesheet" href="layout.css" />
+        <style>
+            body {
+                font-family: 'Roboto';
+                transition: background-color 0.3s, color 0.3s;
+            }
+            h3 {
+                text-align: center;
+            }
+            /* Dark mode styles */
+            body.dark-mode {
+                background-color: #333;
+                color: #fff;
+            }
+        </style>
+    </head>
+    <body>
+        <h3 id="title">Searching Algorithms Visualizer</h3>
+        <button onclick="toggleDarkMode()">Toggle Dark Mode</button>
+        <div id="array"></div>
+        <br /><br />
+        <div style="text-align: center">
+          <label for="fname">
+            Number to be Searched:
+          </label>
+          <input type="text" id="fname"
+                 name="fname" />
+          <br>
+          <button id="btn"
+                  onclick="BinarySearch()">Search</button>
+          <br >
+          <div id="text"></div>
+        </div>
+       
+    
+        <script src="algo.js"></script>
+        <script>
+            function toggleDarkMode(){
+                const body = document.body;
+                body.classList.toggle('dark-mode');
+            }
+        </script>
+    </body>
+</html>

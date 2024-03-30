@@ -1,0 +1,31 @@
+    .header {
+    font-size: 35px;
+    text-align: center;
+    }    
+    #array {
+    background-color: white;
+    height: 305px;
+    width: 598px;
+    margin: auto;
+    position: relative;
+    margin-top: 64px;
+    }
+    
+    .block {
+    width: 28px;
+    background-color: #705b95;
+    position: absolute;
+    border-radius: 5px;
+    bottom: 0px;
+    transform: perspective(100px) rotateX(20deg); 
+    transition: 0.2s all ease;
+    }
+    
+    .block_id {
+    position: absolute;
+    color: black;
+    margin-top: -20px;
+    width: 100%;
+    text-align: center;
+    }
+    
